@@ -169,7 +169,7 @@ export default function Koleksi() {
           <h1 className='text-white text-[50px]'>
             Koleksi
           </h1>
-          <p className='text-white max-w-xl'>
+          <p className='text-white max-w-xl text-right'>
             Koleksi adalah kumpulan objek atau data dengan tema atau tujuan tertentu, seperti buku-buku di perpustakaan,
             karya seni, data statistik, barang pribadi, desain pakaian, musik, atau dokumen sejarah.
           </p>
