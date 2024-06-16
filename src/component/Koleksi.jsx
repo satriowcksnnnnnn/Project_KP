@@ -175,7 +175,7 @@ export default function Koleksi() {
           </p>
         </div>
       </div>
-      <div className='px-28'>
+      <div className='px-28 pb-28'> {/* Added padding-bottom to ensure space for footer */}
         <div className='flex justify-center w-full space-x-4 border-b border-gray-500'>
           <button className={`py-4 px-10 text-[22px] ${activeTab === 'popular' ? 'border-b-2 border-third text-third' : ' text-white'}`} onClick={() => setActiveTab('popular')}>Popular</button>
           <button className={`py-4 px-10 text-[22px] ${activeTab === 'lukisan' ? 'border-b-2 border-third text-third' : ' text-white'}`} onClick={() => setActiveTab('lukisan')}>Lukisan</button>
@@ -189,8 +189,8 @@ export default function Koleksi() {
               {populer.map((populer, index) => (
                 <div key={index} className='rounded-xl bg-white'>
                   <Link to={populer.link}>
-                    <img src={populer.image} alt={populer.title} className='w-full h-full object-cover'/>
-                    <div className='py-4 px-4'>
+                    <img src={populer.image} alt={populer.title} className='w-full h-full object-cover rounded-t-xl'/>
+                    <div className='py-4 px-4 bg-white rounded-b-xl'>
                       <p className='text-black text-center font-medium text-[18px]'>
                         {populer.title}
                       </p>
@@ -205,7 +205,7 @@ export default function Koleksi() {
             {lukisan.map((lukisan, index) => (
               <div key={index} className='rounded-xl bg-white'>
                 <div className=''>
-                  <img src={lukisan.img} alt={lukisan.img} className='w-full h-full object-cover' style={{height: 460}}/>
+                  <img src={lukisan.img} alt={lukisan.img} className='w-full h-full object-cover rounded-xl' style={{height: 460}}/>
                   <div className='py-4 px-4'>
                     <p className='text-black text-center font-medium text-[18px]'>
                       {lukisan.title}
@@ -221,7 +221,7 @@ export default function Koleksi() {
             {batik.map((batik, index) => (
               <div key={index} className='rounded-xl bg-white'>
                 <div className=''>
-                  <img src={batik.img} alt={batik.img} className='w-full h-full object-cover' style={{height: 460}}/>
+                  <img src={batik.img} alt={batik.img} className='w-full h-full object-cover rounded-xl' style={{height: 460}}/>
                   <div className='py-4 px-4'>
                     <p className='text-black text-center font-medium text-[18px]'>
                       {batik.title}
@@ -237,7 +237,7 @@ export default function Koleksi() {
             {kerajinan.map((kerajinan, index) => (
               <div key={index} className='rounded-xl bg-white'>
                 <div className=''>
-                  <img src={kerajinan.img} alt={kerajinan.img} className='w-full h-full object-cover' style={{height: 460}}/>
+                  <img src={kerajinan.img} alt={kerajinan.img} className='w-full h-full object-cover rounded-xl' style={{height: 460}}/>
                   <div className='py-4 px-4'>
                     <p className='text-black text-center font-medium text-[18px]'>
                       {kerajinan.title}
@@ -253,7 +253,7 @@ export default function Koleksi() {
            {seniman.map((seniman, index) => (
              <div key={index} className='rounded-xl bg-white'>
                <div className=''>
-                 <img src={seniman.img} alt={seniman.img} className='w-full h-full object-cover' style={{height: 460}}/>
+                 <img src={seniman.img} alt={seniman.img} className='w-full h-full object-cover rounded-xl' style={{height: 460}}/>
                  <div className='py-4 px-4'>
                    <p className='text-black text-center font-medium text-[18px]'>
                      {seniman.title}
@@ -265,7 +265,7 @@ export default function Koleksi() {
                </div>
              </div>
            ))}
-         </div>
+         </div> 
           }
         </div>
       </div>
